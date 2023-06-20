@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- SideBar -->
+    <section class="sidebar">
+      <ul class="sidebar-top-container">
+        <li>
+          <i class="bx bxs-inbox"></i>
+          <p>Inbox</p>
+        </li>
+        <li>
+          <i class="bx bx-calendar-star"></i>
+          <p>Today</p>
+        </li>
+        <li>
+          <i class="bx bx-calendar-event"></i>
+          <p>Upcoming</p>
+        </li>
+      </ul>
+      <div class="sidebar-project-container">
+        <div>
+          <p>Projects</p>
+          <button class="addproject-btn">New</button>
+          <i class="bx bx-chevron-down"></i>
+        </div>
+        <ul></ul>
+      </div>
+      <div class="sidebar-footer">
+        <button><i class="bx bx-plus"></i></button>
+        <button class="home-page-button">Home</button>
+        <button class="switch-mode"><i class="bx bx-sun"></i></button>
+      </div>
+    </section>
+    <!-- Home Screen -->
+    <section class="home-page">
+      <div class="home-page-container">
+        <div>
+          <h1>Welcome to TaskMaster</h1>
+          <p>
+            Stay organized and get things done with TaskMaster, our intuitive
+            and powerful task management platform. Plan your day, manage
+            projects, and stay on top of your priorities effortlessly.
+            Experience a seamless workflow and boost your productivity with
+            TaskMaster.
+          </p>
+        </div>
+        <div>
+          <h1>Key Features</h1>
+          <ul>
+            <li>
+              <i class="bx bxl-tailwind-css"></i>
+              <span class="feature-text"
+                >Simple and user-friendly interface</span
+              >
+            </li>
+            <li>
+              <i class="bx bx-task"></i>
+              <span class="feature-text"
+                >Create and manage tasks with ease</span
+              >
+            </li>
+            <li>
+              <i class="bx bx-calendar-edit"></i>
+              <span class="feature-text"
+                >Categorize tasks for better organization</span
+              >
+            </li>
+            <li>
+              <i class="bx bxs-calendar"></i>
+              <span class="feature-text">Set due dates and reminders</span>
+            </li>
+            <li>
+              <i class="bx bx-user-plus"> </i>
+              <span class="feature-text"
+                >Collaborate with team members on projects</span
+              >
+            </li>
+            <li>
+              <i class="bx bxs-dashboard"></i>
+              <span class="feature-text"
+                >Stay on track with a personalized dashboard</span
+              >
+            </li>
+            <li>
+              <i class="bx bx-adjust"></i>
+              <span class="feature-text"
+                >Customize your experience with dark mode and light mode
+                options</span
+              >
+            </li>
+            <li>
+              <i class="bx bx-devices"> </i>
+              <span class="feature-text"
+                >Sync your tasks across devices for seamless access</span
+              >
+            </li>
+          </ul>
+          <p>
+            Join thousands of users who have already transformed their
+            productivity. Sign up now and start achieving more with TaskMaster.
+          </p>
+        </div>
+      </div>
+    </section>
+    <form>
+      <div class="form-container">
+        <div>
+          <input type="text" name="" id="project-title" required />
+          <span for="project-title">Project Title</span>
+        </div>
+        <div class="radio-btns">
+          <h1>priority:</h1>
+          <div>
+            <input type="radio" name="priority" id="btn-low" required />
+            <label for="btn-low" id="lb-btn-low">Low</label>
+            <input type="radio" name="priority" id="btn-medium" />
+            <label for="btn-medium" id="lb-btn-me">medium</label>
+            <input type="radio" name="priority" id="btn-high" />
+            <label for="btn-high" id="lb-btn-high">High</label>
+          </div>
+        </div>
+        <div>
+          <input type="date" name="" id="" />
+          <select name="project-list" id="" required>
+            <option value="" disabled selected>Select Project</option>
+            <option value="Inbox">Inbox</option>
+          </select>
+        </div>
+        <div>
+          <input type="submit" value="Submit" />
+        </div>
+      </div>
+    </form>
+    <template id="template">
+      <div class="task-page-wrapper">
+        <h1 class="project-name">Sample</h1>
+        <p class="line"></p>
+        <div class="filter">
+          <p>filter by</p>
+          <div>
+            <button>priority <i class="bx bx-chevron-down"></i></button>
+            <button>date <i class="bx bx-chevron-down"></i></button>
+          </div>
+        </div>
+        <ul class="task-list">
+          <li class="task">
+            <div>
+              <input type="radio" name="" id="task-status" />
+              <p class="task-name">TaskName</p>
+            </div>
+            <div>
+              <input type="date" name="" id="" /> <i class="bx bx-trash"></i>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </template>
+  </body>
+</html>
